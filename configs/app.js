@@ -6,6 +6,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import 'dotenv/config';
 import { dbConnection } from './db.js';
+import userModel from '../src/users/user.model.js';
 
 const middlewares = (app) => {
     app.use(express.json());
